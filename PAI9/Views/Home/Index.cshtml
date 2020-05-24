@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Songs Dashboard</h1>
+    <p class="lead">Songs Dashboard is a free aplication for database managment. You can add/edit/delete songs and genres</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Let's go to Songs section!</h2>
+        <p>
+            In this section you can manage your songs.
+        </p>
+        <p> @Html.ActionLink("Songs »", "Index", "Songs", null, new { @class = "btn btn-default" } )</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Let's go to Genres section!</h2>
+        <p>In this section you can manage your genres.</p>
+        <p> @Html.ActionLink("Genres »", "Index", "Genres", null, new { @class = "btn btn-default" })</p>
+    </div>
+
+</div>
